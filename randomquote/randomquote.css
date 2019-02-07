@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+body {
+    background-color: #334;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+
+  @media (min-resolution: 40dpi),
+    (-webkit-min-device-pixel-ratio: 1) {
+    body {
+      background-image: url('../assets/photo-dunes-640-480.jpeg');
+    }
+  }
+
+  @media (min-resolution: 72dpi),
+    (-webkit-min-device-pixel-ratio: 2) {
+    body {
+      background-image: url('../assets/photo-dunes-800-600.jpeg');
+    }
+  }
+
+  @media (min-resolution: 85dpi),
+    (-webkit-min-device-pixel-ratio: 3) {
+    body {
+      background-image: url('../assets/photo-dunes-1280-1024.jpeg');
+    }
+  }
+
+  .title-text {
+    color: black;
+  }
+
+  .text {
+    font-family: 'Lato', sans-serif;
+    font-size: x-large;
+  }
+
+  #quote-box {
+    border-radius:10px;
+    position:relative;
+    width:450px;
+    padding:40px 50px;
+    background-color:#fff;
+  }
+
+  .button {
+    display: block;
+    height:30px;
+    border:none;
+    border-radius:3px;
+    padding: 14px 18px 4px 18px;
+    margin-top:30px;
+    margin: auto;
+    color:#fff;
+    background-color:#333;
+    outline:none;
+    opacity:1;
+    cursor:pointer;
+    text-align: center;
+  }
+  @media (hover: hover) {
+    .button:hover {
+      opacity: 0.9;
+    }
+  }
+  .social-button {
+    float: left;
+  }
+
+  .quote-button {
+    float: right;
+  }
