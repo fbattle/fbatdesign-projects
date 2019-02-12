@@ -1,0 +1,31 @@
+body {
+  display: grid;
+  justify-items: center;
+  grid-template-rows: 10% 20% 60% 10%;
+}
+
+h1 {
+  grid-row: 1;
+}
+
+.break_session {
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid green;
+}
+
+.timer {
+  grid-row: 3;
+}
+
+.controls {
+  grid-row: 4;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.length_buttons {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
