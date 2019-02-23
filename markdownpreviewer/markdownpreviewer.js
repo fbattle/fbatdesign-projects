@@ -23,9 +23,9 @@ class MarkdownPreviewer extends React.Component {
     const inner = {__html: marked(this.state.input)};
     return (<div>
         <h1>Editor</h1>
-        <textarea id="editor" class="editor" value={this.state.input} onChange={this.handleChange} />
+        <textarea id="editor" className="editor" value={this.state.input} onChange={this.handleChange} />
         <h1>Preview</h1>
-        <div id="preview" class="preview" dangerouslySetInnerHTML={inner}></div>
+        <div id="preview" className="preview" dangerouslySetInnerHTML={inner}></div>
       </div>
     );
   } // end render
@@ -37,7 +37,7 @@ const placeholder =
 ## This is a sub-heading...
 ### And here's some other cool stuff:
 
-Heres some code, \`<div></div>\`, between 2 backticks.
+Here's some code, \`<div></div>\`, between 2 backticks.
 
 \`\`\`
 // this is multi-line code:
