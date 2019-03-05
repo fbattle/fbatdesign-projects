@@ -63,9 +63,8 @@ body {
   }
 
   .button-container {
+    margin-top: auto;
     display: flex;
-    justify-content: space-between;
-    margin: 1em;
   }
 
   .button {
@@ -79,7 +78,6 @@ body {
     outline: none;
     opacity: 1;
     cursor: pointer;
-    margin: auto;
     align-items: center;
     justify-content: center;
   }
@@ -90,9 +88,10 @@ body {
   }
 
   .social-button {
-    float: left;
+    margin: 1em;
   }
 
   .quote-button {
-    float: right;
+    margin: 1em;
+    margin-left: auto;
   }
