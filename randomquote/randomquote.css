@@ -39,41 +39,56 @@ body {
 
   .title-text {
     color: black;
+    margin-bottom: 1%;
   }
 
   .text {
     font-family: 'Lato', sans-serif;
     font-size: x-large;
+    margin: 1em;
+  }
+
+  .quote-button-text {
+    font-family: 'Lato', sans-serif;
   }
 
   #quote-box {
-    border-radius:10px;
-    position:relative;
-    width:450px;
-    padding:40px 50px;
-    background-color:#fff;
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    padding: 1em;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
   }
 
   .button {
-    display: block;
-    height:30px;
-    border:none;
-    border-radius:3px;
-    padding: 14px 18px 4px 18px;
-    margin-top:30px;
+    display: flex;
+    height: 30px;
+    width: 100px;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    background-color: #333;
+    outline: none;
+    opacity: 1;
+    cursor: pointer;
     margin: auto;
-    color:#fff;
-    background-color:#333;
-    outline:none;
-    opacity:1;
-    cursor:pointer;
-    text-align: center;
+    align-items: center;
+    justify-content: center;
   }
   @media (hover: hover) {
     .button:hover {
       opacity: 0.9;
     }
   }
+
   .social-button {
     float: left;
   }

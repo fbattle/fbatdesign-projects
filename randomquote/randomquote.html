@@ -8,7 +8,6 @@
 <link rel="stylesheet" href="randomquote.css">
 <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
 <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-<!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> --> <!--needs babel ?-->
 <script src="randomquote.js"></script>
 </head>
 
@@ -19,9 +18,12 @@ Free Code Camp Random Quote Generator for Front End Libraries Projects
 <h1 id="title" class="title-text">Random Dune Quote Generator</h1>
 
 <div id="quote-box" >
-  <p id="text" class="text">text</p>
-  <p id="author" class="text">author text</p>
-  <a id="tweet-quote" class="button social-button" target="_blank" onclick=""><i class="fa fa-twitter"
-    href="https://twitter.com/intent/tweet"></i></a>
-  <a id="new-quote" class="button quote-button" onclick="" target="_blank">New Quote</a>
+  <div><p id="text" class="text">text</p></div>
+  <div><p id="author" class="text">author text</p></div>
+  <div class="button-container">
+    <div><a id="tweet-quote" class="button social-button" target="_blank" onclick=""><i class="fa fa-twitter"
+      href="https://twitter.com/intent/tweet"></i></a></div>
+    <div><a id="new-quote" class="button quote-button" onclick="" target="_blank">
+      <p class="quote-button-text">New Quote</p></a></div>
+  </div>
 </div>
