@@ -29,12 +29,12 @@ class SessionComp extends React.Component {
 
   render () {
     return(<div>
-        <label id="session-label">Session Length</label>
+        <label id="session-label" class="pomodoro-text">Session Length</label>
         <div className="length_buttons">
           <div id="session-decrement" onClick={this.decrSession}>
           <i className="fa fa-arrow-down fa-2x"/>
           </div>
-          <div id="session-length">{this.props.len}</div>
+          <div id="session-length" class="pomodoro-text">{this.props.len}</div>
           <div id="session-increment" onClick={this.incrSession}>
           <i className="fa fa-arrow-up fa-2x"/>
           </div>
@@ -65,11 +65,11 @@ class BreakComp extends React.Component {
 
   render () {
     return(<div>
-        <label id="break-label">Break Length</label>
+        <label id="break-label" class="pomodoro-text">Break Length</label>
         <div className="length_buttons">
           <div id="break-decrement" onClick={this.decrBreak}>
             <i className="fa fa-arrow-down fa-2x"/></div>
-          <div id="break-length">{this.props.len}</div>
+          <div id="break-length" class="pomodoro-text">{this.props.len}</div>
           <div id="break-increment" onClick={this.incrBreak}>
           <i className="fa fa-arrow-up fa-2x"/></div>
         </div>
@@ -99,8 +99,8 @@ class TimerComp extends React.Component {
     const timer_label = this.props.isSession ? 'Session Time'
       : 'Break Time';
     return(<div id="timer" className="timer">
-        <div id="timer-label">{timer_label}</div>
-        <div id="time-left">{this.displayTime()}</div>
+        <div id="timer-label" class="pomodoro-text">{timer_label}</div>
+        <div id="time-left" class="pomodoro-text">{this.displayTime()}</div>
         <audio id="beep" preload="auto"
           src="https://goo.gl/65cBl1"/>
     </div>);

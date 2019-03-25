@@ -5,6 +5,7 @@
 }
 
 body {
+  margin-top: 10%;
   display: grid;
   justify-items: center;
   grid-template-rows: 10% 20% 60% 10%;
@@ -12,6 +13,7 @@ body {
 
 h1 {
   grid-row: 1;
+  padding: 20px;
 }
 
 .break_session {
@@ -19,19 +21,30 @@ h1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: 1px solid green;
+  padding: 20px;
 }
 
 .timer {
   grid-row: 3;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .controls {
   grid-row: 4;
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
 }
 
 .length_buttons {
   display: grid;
+  padding: 20px;
   grid-template-columns: 1fr 1fr 1fr;
+}
+
+.pomodoro-text {
+  font-size: larger;
+  padding: 10px;
 }
