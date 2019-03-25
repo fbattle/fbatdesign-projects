@@ -1,0 +1,58 @@
+body {
+  background-color: darkgrey;
+  padding-left: 1%;
+}
+
+a:visited, a:default, a:active {
+  color: white;
+}
+
+
+  .welcome-section {
+    min-height: 35vh;
+    padding-top: 35vh;
+    padding-bottom: 10vh;
+  }
+
+  .section-space {
+      padding-top: 5em;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .title-text {
+    text-align: left;
+  }
+
+  .text-container {
+    width: 50%;
+    padding-left: 1em;
+  }
+
+  .plain-text {
+    text-align: left;
+  }
+
+  .project-tile {
+    width: 200px;
+    border: 2px solid grey;
+    margin: 10px;
+  }
+
+  .fig-text {
+    padding-left: 1em;
+  }
+
+  .project-multi-tiles {
+    display: flex;
+    flex-direction: row;
+  }
+
+  @media (max-width: 600px) {
+    .project-multi-tiles {
+      display: flex;
+      flex-direction: column;
+    }
+  }
