@@ -117,10 +117,10 @@ class Calculator extends React.Component {
         display: str
       });
     } else {
-      this.setState( {
+      this.setState((state) => ( {
         clear: false,
-        display: this.state.display + str
-      });
+        display: state.display + str
+      }));
     }
   }
 
@@ -139,11 +139,11 @@ class Calculator extends React.Component {
       });
     } else {
       console.log('new formula=' + formula + this.state.display + str);
-      this.setState( {
-        formula: formula + this.state.display + str,
+      this.setState((state) => ( {
+        formula: formula + state.display + str,
         clear: true,
         lastButton: 'op'
-      });
+      }));
     }
   }
 

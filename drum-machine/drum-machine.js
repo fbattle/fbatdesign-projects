@@ -177,17 +177,17 @@ class DrumMachine extends React.Component {
   handlePowerClick() {
     // Here we toggle the power
     const display = this.state.power === true ? 'OFF' : '';
-    this.setState({
-      power: !this.state.power,
-      display: display,
-    });
+    this.setState((state) => ({
+      power: !state.power,
+      display: display
+    }));
   }
 
   handleBankClick() {
     if (this.state.power) {
-      this.setState({
-        bank: this.state.bank === bankOne ? bankTwo : bankOne
-      });
+      this.setState((state) => ({
+        bank: state.bank === bankOne ? bankTwo : bankOne
+      }));
     }
   }
 
