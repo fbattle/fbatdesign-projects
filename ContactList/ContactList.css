@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+  height: 25%;
+  margin-right: 10px;
+  border-radius: 5px;
+  padding-top: 35px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 5px solid green;
+}
